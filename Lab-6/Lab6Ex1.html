@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <h1>Scena z piramidą (9 ścian)</h1>
+    <h1>Piramida z oświetleniem</h1>
     <canvas id="glcanvas" width="800" height="600"></canvas>
 
     <div>
@@ -143,15 +143,15 @@
             uShininess: gl.getUniformLocation(program, "uShininess")
         };
 
-        const pyramid = createPyramid(9, 4, 5); // Zmniejszona piramida
-        const base = createBase(10); // Podstawa pod piramidę
+        const pyramid = createPyramid(9, 4, 5);
+        const base = createBase(10);
         const pyramidBuffers = initBuffers(pyramid);
         const baseBuffers = initBuffers(base);
 
         const materialSelect = document.getElementById("material");
         materialSelect.addEventListener("change", updateMaterial);
 
-        let material = "blue"; // Domyślny materiał
+        let material = "blue";
 
         function updateMaterial() {
             material = materialSelect.value;
@@ -192,12 +192,10 @@
             mat4.invert(normalMatrix, modelView);
             mat4.transpose(normalMatrix, normalMatrix);
 
-            // Set uniforms
             gl.uniformMatrix4fv(locations.uProjectionMatrix, false, projection);
             gl.uniformMatrix4fv(locations.uModelViewMatrix, false, modelView);
             gl.uniformMatrix4fv(locations.uNormalMatrix, false, normalMatrix);
 
-            // Kręcące się światło
             const time = Date.now() * 0.001;
             const lightPos = [
                 Math.cos(time) * 10, 10, Math.sin(time) * 10
@@ -206,7 +204,6 @@
             gl.uniform3fv(locations.uLightPosition, lightPos);
             gl.uniform3fv(locations.uAmbientLight, [0.2, 0.2, 0.2]);
 
-            // Ustawienia materiałów na podstawie wyboru
             if (material === "blue") {
                 gl.uniform4fv(locations.uMaterialAmbient, [0.1, 0.1, 0.3, 1]);
                 gl.uniform4fv(locations.uMaterialDiffuse, [0.4, 0.4, 0.8, 1]);
@@ -224,7 +221,6 @@
                 gl.uniform1f(locations.uShininess, 32.0);
             }
 
-            // Rysowanie podstawy
             gl.bindBuffer(gl.ARRAY_BUFFER, baseBuffers.position);
             gl.vertexAttribPointer(locations.aPosition, 3, gl.FLOAT, false, 0, 0);
             gl.enableVertexAttribArray(locations.aPosition);
@@ -236,7 +232,6 @@
             gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, baseBuffers.indices);
             gl.drawElements(gl.TRIANGLES, baseBuffers.count, gl.UNSIGNED_SHORT, 0);
 
-            // Rysowanie piramidy
             gl.bindBuffer(gl.ARRAY_BUFFER, pyramidBuffers.position);
             gl.vertexAttribPointer(locations.aPosition, 3, gl.FLOAT, false, 0, 0);
             gl.enableVertexAttribArray(locations.aPosition);
