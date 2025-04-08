@@ -1,1 +1,1 @@
-#  Światło i Materiały w OpenGL 
+#  Grafika komputerowa
