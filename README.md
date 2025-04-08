@@ -1,1 +1,1 @@
-# SK_Lab6
+#  Światło i Materiały w OpenGL 
