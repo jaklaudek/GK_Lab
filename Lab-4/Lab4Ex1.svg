@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800" height="600"
+viewBox="0 0 800 600"
+preserveAspectRatio="xMidYMid">
+
+	<g transform="translate(400, 450)">
+		<polygon points="0,0 -50,130 50, 130" fill="blue" />
+
+		<g>
+			<animateTransform attributeType="XML" attributeName="transform" type="rotate"
+			values="-15;15;-15" dur="2.5s" repeatCount="indefinite" additive="sum" />
+			<rect x="-150" y="-15" width="300" height="30" fill="red" />
+
+			<g transform="translate(-150,0)">
+				<polygon points="37.58770483143634,13.680805733026748 20.000000000000004,34.64101615137754 -6.945927106677212,39.39231012048832 -30.641777724759116,25.71150438746158 -40,4.898587196589413e-15 -30.641777724759123,-25.71150438746157 -6.945927106677248,-39.39231012048832 19.99999999999997,-34.64101615137756 37.58770483143633,-13.680805733026776" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1.5s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+
+			<g transform="translate(150,0)">
+				<polygon points="37.58770483143634,13.680805733026748 20.000000000000004,34.64101615137754 -6.945927106677212,39.39231012048832 -30.641777724759116,25.71150438746158 -40,4.898587196589413e-15 -30.641777724759123,-25.71150438746157 -6.945927106677248,-39.39231012048832 19.99999999999997,-34.64101615137756 37.58770483143633,-13.680805733026776" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1.5s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+		</g>
+	</g>
+
+	<g transform="translate(200, 300)">
+		<polygon points="0,0 -30,80 30, 80" fill="purple" />
+
+		<g>
+			<animateTransform attributeType="XML" attributeName="transform" type="rotate"
+			values="-15;15;-15" dur="2s" repeatCount="indefinite" additive="sum" />
+			<rect x="-100" y="-10" width="200" height="20" fill="red" />
+
+			<g transform="translate(-100,0)">
+				<polygon points="23.49231551964771,8.550503583141717 12.500000000000004,21.650635094610966 -4.341204441673257,24.6201938253052 -19.15111107797445,16.069690242163485 -25,3.061616997868383e-15 -19.151111077974452,-16.06969024216348 -4.34120444167328,-24.620193825305197 12.499999999999984,-21.650635094610976 23.492315519647704,-8.550503583141737" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+
+			<g transform="translate(100,0)">
+				<polygon points="23.49231551964771,8.550503583141717 12.500000000000004,21.650635094610966 -4.341204441673257,24.6201938253052 -19.15111107797445,16.069690242163485 -25,3.061616997868383e-15 -19.151111077974452,-16.06969024216348 -4.34120444167328,-24.620193825305197 12.499999999999984,-21.650635094610976 23.492315519647704,-8.550503583141737" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+		</g>
+	</g>
+
+	<g transform="translate(600, 200)">
+		<polygon points="0,0 -20,60 20, 60" fill="green" />
+
+		<g>
+			<animateTransform attributeType="XML" attributeName="transform" type="rotate"
+			values="-15;15;-15" dur="1.5s" repeatCount="indefinite" additive="sum" />
+			<rect x="-80" y="-10" width="160" height="10" fill="red" />
+
+			<g transform="translate(-80,-5)">
+				<polygon points="14.095389311788626,5.130302149885031 7.500000000000002,12.990381056766578 -2.6047226650039548,14.772116295183121 -11.490666646784668,9.641814145298092 -15,1.83697019872103e-15 -11.490666646784671,-9.641814145298088 -2.604722665003968,-14.77211629518312 7.49999999999999,-12.990381056766585 14.09538931178862,-5.130302149885042" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1.2s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+
+			<g transform="translate(80,-5)">
+				<polygon points="14.095389311788626,5.130302149885031 7.500000000000002,12.990381056766578 -2.6047226650039548,14.772116295183121 -11.490666646784668,9.641814145298092 -15,1.83697019872103e-15 -11.490666646784671,-9.641814145298088 -2.604722665003968,-14.77211629518312 7.49999999999999,-12.990381056766585 14.09538931178862,-5.130302149885042" stroke="black" fill="black">
+					<animateTransform attributeType="XML" attributeName="transform" type="rotate" from="0" to="360"
+					dur="1.2s" repeatCount="indefinite" additive="sum" />
+				</polygon>
+			</g>
+		</g>
+	</g>
+</svg>
